@@ -11,12 +11,12 @@ body {
 	font-size: 100%;
 }
 
-header {
+/*header {
 	margin-top: 3em;
 	margin-bottom: 3.5em;
-}
+}*/
 
-h1 {
+/*1 {
  	text-align: center;
  	font-size: 2.5em;
  	font-weight: 500;
@@ -30,7 +30,7 @@ h2 {
 h3 {
 	font-size: 1em;
 	font-weight: 400;
-}
+}*/
 
 #main-content {
 	margin-left: 20px;
@@ -40,29 +40,109 @@ h3 {
 .box {
 	display:  block;
 	float: left;
-	padding: 20px;
+	/*padding: 20px;*/
 	/*border: 1px solid #444444;*/
 	overflow: auto;
 }
+
 @media (min-width: 1200px) {
-	.box {
-		width: 33%;
+
+	header {
+		margin-top: 3em;
+		margin-bottom: 3.5em;
 	}
-}
-@media (min-width: 992px) and (max-width: 1199px) {
+
+	h1 {
+ 		text-align: center;
+ 		font-size: 2.5em;
+ 		font-weight: 500;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+
+	h3 {
+		font-size: 1em;
+		font-weight: 400;
+	}
 
 	.box {
+		padding: 2%;
+		width: 33%;
+	}
+
+}
+
+@media (min-width: 752px) and (max-width: 1199px) {
+
+	header {
+		margin-top: 3em;
+		margin-bottom: 3.5em;
+	}
+
+	h1 {
+ 		text-align: center;
+ 		font-size: 2.5em;
+ 		font-weight: 500;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+
+	h3 {
+		font-size: 1em;
+		font-weight: 400;
+	}
+
+	.box {
+		padding: 5%;
 		width: 50%;
+	}
+
+	.book-content {
+		font-size: 1.1em;
 	}
 
 	#Ravegnani {
 		clear: left;
 	}
 }
-@media (max-width: 991px) {
+
+@media (max-width: 751px) {
+
+	header {
+		margin-top: 4em;
+	}
+
+	h1 {
+ 		text-align: center;
+ 		font-size: 2.75em;
+ 		font-weight: 500;
+}
+
+	h2 {
+		font-size: 1.75em;
+		font-weight: 500;
+	}
+
+	h3 {
+		font-size: 1.25em;
+		font-weight: 500;
+	}
+
 	.box {
+		padding: 10%;
 		width: 100%;
 	}
+
+	.book-content{
+		font-size: 1.15em;
+	}
+
 }
 
 .cover {
