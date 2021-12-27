@@ -40,10 +40,29 @@ h3 {
 .box {
 	display:  block;
 	float: left;
-	width: 33%;
 	padding: 20px;
 	/*border: 1px solid #444444;*/
 	overflow: auto;
+}
+@media (min-width: 1200px) {
+	.box {
+		width: 33%;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.box {
+		width: 50%;
+	}
+
+	#Ravegnani {
+		clear: left;
+	}
+}
+@media (max-width: 991px) {
+	.box {
+		width: 100%;
+	}
 }
 
 .cover {
