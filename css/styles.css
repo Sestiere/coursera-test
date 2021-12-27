@@ -1,0 +1,15 @@
+body {
+	font-family: Helvetica;
+}
+
+.container {
+	/*border: 1px solid darkmagenta;*/
+}
+
+.row {
+	margin-bottom: 15px;
+}
+
+.col-md-4 {
+	/*border: 1px solid darkmagenta;*/
+}

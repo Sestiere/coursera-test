@@ -149,7 +149,8 @@ h3 {
 	}*/
 
 	.col-lg-4 {
-		padding: 2.5%;
+		/*padding-top: 2%;*/
+		padding-left: 4%;
 	}
 
 	.book-content {
@@ -230,7 +231,8 @@ h3 {
 	}*/
 
 	.col-md-6 {
-		padding: 4%;
+		/*padding-top: 2%;*/
+		padding-left: 5%;
 	}
 
 	.book-content {
@@ -246,10 +248,10 @@ h3 {
 
 @media (max-width: 991px) {
 
-	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+	/*.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     	float: left;
     	/*border: 1px solid darkmagenta;*/
-  	}
+  	/*}
   	.col-sm-1 {
     	width: 8.33%;
   	}
@@ -285,7 +287,7 @@ h3 {
   	}
   	.col-sm-12 {
     	width: 100%;
-  	}
+  	}*/
 
 	header {
 		margin-top: 4em;
@@ -312,8 +314,17 @@ h3 {
 		width: 100%;
 	}*/
 
-	.col-sm-12 {
+	/*.col-sm-12 {
 		padding: 5%;
+	}*/
+
+	#Zorzi {
+		clear: left;
+		float: left;
+	}
+
+	#Ravegnani {
+		clear: left;
 	}
 
 	.book-content{
