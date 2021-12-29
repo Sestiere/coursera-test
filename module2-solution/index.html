@@ -13,72 +13,82 @@
 		}
 
 		body {
-			font-family: Helvetica Neue, Arial, sans-serif;
+			font-family: Helvetica, Arial, sans-serif;
+			color: #333333;
 		}
 
 		h1 {
+			width: 100%;
 			text-align: center;
-			font-size: 2.5em;
-			color: steelblue;
-			font-weight: 300;
-			margin-top: 1em;
-			margin-bottom: 1.5em;
+			font-weight: 400;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-top: 32px;
+			margin-bottom: 44px;
 		}
 
 		li {
-  			list-style-type: disc;
+			list-style-type: disc;
+		}
+
+		.planet-box {
+			background-color: floralwhite;
+			border: 2px solid #333333;
+			border-radius: 3px;
+			margin: 5px;
+			position: relative;
 		}
 
 		/* Simple Responsive Framework. */
 
 		.row {
   			width: 100%;
-		}
-
-		.row > div {
-			/*border: 2px solid black;*/
-			padding-left: 1.5%;
-			padding-right: 2%;
-			padding-bottom: 1.5%;
-			position: relative;
-			margin-bottom: 100px;
-		}
-
-		.row div {
-			padding-right: 20px;
+  			padding-left: 5px;
+			padding-right: 5px;
 		}
 
 		.planet-id {
-			/*border: 2px solid black;*/
-			width: 180px;
-			height: 35px;
-			padding: 1.5%;
-			position: absolute;
-			top: 1px;
-			right: -1px;
-			font-size: 1.2em;
-			font-style: italic;
-			color: steelblue;
-			font-weight: 300;
+			border: 2px solid #333333;
+			border-radius: 3px;
+			width: 140px;
 			text-align: right;
-			margin-bottom: 150px;
+			font-size: 1.02em;
+			font-style: oblique;
+			font-weight: 500;
+			padding-top: 4px;
+			padding-right: 10px;
+			padding-bottom: 3px;
+			position: absolute;			
+			top: -2px;
+			right: -2px;
 		}
 
-		.planet-facts {
-			/*border: 2px solid black;*/
-			font-size: 1em;
-			color: #444444;
-			font-weight: 300;
-			position: relative;
-			top: 70px;
+		.planet-data {
+			padding-right: 15px;
+			padding-bottom: 15px;
+			padding-left: 20px;
+			margin-top: 64px;
+		}
+
+		#mercury-id {
+			background-color: darkseagreen;
+		}
+
+		#venus-id {
+			background-color: pink;
+		}
+
+		#earth-id {
+			background-color: skyblue;
 		}
 
 		/********** Large devices only **********/
 		@media (min-width: 992px) {
-
+			.row, .row > div {
+				display: flex;
+			}
   			.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     			float: left;
-    			padding-right: 1%;
   			}
   			.col-lg-1 {
     			width: 8.33%;
@@ -123,7 +133,6 @@
 
   			.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     			float: left;
-    			padding-right: 1%;
   			}
   			.col-md-1 {
     			width: 8.33%;
@@ -161,77 +170,91 @@
   			.col-md-12 {
     			width: 100%;
   			}
+  				display: flex;
+  			}
 		}
+
+		/********** Small devices only **********/
+		@media only screen and (max-width: 767px) {
+  		.row > div {
+    		display: block;
+    		width: 100%;
+  		}
+}
 
 	</style>
 
 </head>
 <body>
-	<header>
-		<h1>Planets of our Solar System</h1>
-	</header>
+	<h1>Planets of our Solar System</h1>
 	<div class="row">
 		<div class="col-lg-4 col-md-6">
-			<div class="planet-id">
-				Mercury
-			</div>
-			<div class="planet-facts">
-				The smallest and the nearest to the Sun, Mercury is only slightly larger than the Moon.
-				<ol>
-					<li>Distance from Sun:  58 million km</li>
-					<li>One way light time to the Sun:  &#126; 3 mins</li>
-					<li>Lenght of year:  88 days</li>
-					<li>Planet type:  Terrestrial</li>
-					<li>Satellites:  None</li>
-					<!--<li>Rings: None</li>
-					<li>Discovery: Known by the Ancients</li>-->
-					<li>Equatorial circumference: 15.000 km</li>
-					<li>Density:  5.4 g/cm<sup>3</sup></li>
-					<li>Color:  Grey</li>
-					<li>Namesake:  Roman god of Speed</li>
-				</ol>
-			</div>
+			<div class="planet-box" id="mercury-box">
+				<div class="planet-id" id="mercury-id">
+					Mercury
+				</div>
+				<div class="planet-data">
+					The smallest and the nearest to the Sun, Mercury is only slightly larger than Earth's Moon.
+					<ol>
+						<li>Distance from Sun:  58 million km</li>
+						<li>One way light time to the Sun:  &#126; 3 mins</li>
+						<li>Lenght of year:  88 days</li>
+						<li>Planet type:  Terrestrial</li>
+						<li>Satellites:  None</li>
+						<!--<li>Rings: None</li>
+						<li>Discovery: Known by the Ancients</li>-->
+						<li>Equatorial circumference: 15.000 km</li>
+						<li>Density:  5.4 g/cm<sup>3</sup></li>
+						<li>Color:  Grey</li>
+						<li>Namesake:  Roman god of Speed</li>
+					</ol>
+				</div>
+		    </div>
 		</div>
 		<div class="col-lg-4 col-md-6">
-			<div class="planet-id">
-				Venus
-			</div>
-			<div class="planet-facts">
-				The second planet from the Sun and Earth's closest planetary neighbor, Venus is the most similar planet to Earth.
-				<ol>
-					<li>Distance from Sun:  108 million km</li>
-					<li>One way light time to the Sun:  &#126; 6 mins</li>
-					<li>Lenght of year:  225 days</li>
-					<li>Planet type:  Terrestrial</li>
-					<li>Satellites:  None</li>
-					<!--<li>Rings:  None</li>
-					<li>Discovery:  Known by the Ancients</li>-->
-					<li>Equatorial circumference:  38.000 km</li>
-					<li>Density:  5.2 g/cm<sup>3</sup></li>
-					<li>Color:  Red, Tan</li>
-					<li>Namesake:  Roman goddess of Love and Beauty</li>
-				</ol>
+			<div class="planet-box" id="venus-box">
+				<div class="planet-id" id="venus-id">
+					Venus
+				</div>
+				<div class="planet-data">
+					The second planet from the Sun and Earth's closest neighbor, Venus is the most similar planet to Earth.
+					<ol>
+						<li>Distance from Sun:  108 million km</li>
+						<li>One way light time to the Sun:  &#126; 6 mins</li>
+						<li>Lenght of year:  225 days</li>
+						<li>Planet type:  Terrestrial</li>
+						<li>Satellites:  None</li>
+						<!--<li>Rings:  None</li>
+						<li>Discovery:  Known by the Ancients</li>-->
+						<li>Equatorial circumference:  38.000 km</li>
+						<li>Density:  5.2 g/cm<sup>3</sup></li>
+						<li>Color:  Red, Tan</li>
+						<li>Namesake:  Roman goddess of Love and Beauty</li>
+					</ol>
+				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 col-md-12">
-			<div class="planet-id">
-				Earth
-			</div>
-			<div class="planet-facts">
-				Our home planet is the third from the Sun, and the only place we wnow of so far that's inhabited by living things.
-				<ol>
-					<li>Distance from Sun:  150 million km</li>
-					<li>One way light time to the Sun:  &#126; 8 mins</li>
-					<li>Lenght of year:  365 days</li>
-					<li>Planet type:  Terrestrial</li>
-					<li>Satellites:  1 (the Moon)</li>
-					<!--<li>Rings:  None</li>
-					<li>Discovery:  Known by the Ancients</li>-->
-					<li>Equatorial circumference:  40.000 km</li>
-					<li>Density:  5.5 g/cm<sup>3</sup></li>
-					<li>Color:  Blue, White</li>
-					<li>Namesake:  Old English for 'Ground'</li>
-				</ol>
+		<div class="col-lg-4 col-md-12" id="earth-box">
+			<div class="planet-box">
+				<div class="planet-id" id="earth-id">
+					Earth
+				</div>
+				<div class="planet-data">
+					Our home planet is the third from the Sun, and the only place we wnow of so far that's inhabited by living things.
+					<ol>
+						<li>Distance from Sun:  150 million km</li>
+						<li>One way light time to the Sun:  &#126; 8 mins</li>
+						<li>Lenght of year:  365 days</li>
+						<li>Planet type:  Terrestrial</li>
+						<li>Satellites:  1 (the Moon)</li>
+						<!--<li>Rings:  None</li>
+						<li>Discovery:  Known by the Ancients</li>-->
+						<li>Equatorial circumference:  40.000 km</li>
+						<li>Density:  5.5 g/cm<sup>3</sup></li>
+						<li>Color:  Blue, White</li>
+						<li>Namesake:  Old English for 'Ground'</li>
+					</ol>
+				</div>
 			</div>
 		</div>
 	</div>
